@@ -1,22 +1,123 @@
+body {
+  background-image: url(./../assets/winter.jpg);
+  background-size: cover;
+}
+
+
 #head{
 width: 100%;
-height: 300px;
+height: 125px;
 }
+
+
 div {
   text-align: center;
-  margin: 15px;
+  margin: 20px;
   width: 100%;
-  height: 50px;
+  height: 75px;
 }
 
 span {
   font-size: 85px;
   font-weight: 500;
-  font-family: "Ariel Black";
+  font-family: "Times";
+  color: blue;
+  animation: glitter 4.5s linear 0s infinite normal;
+  -webkit-animation: glitter 4.5s linear 0s infinite normal;
+  -moz-animation: glitter 4.5s linear 0s infinite normal;
+  -ms-animation: glitter 4.5s linear 0s infinite normal;
+  -o-animation: glitter 4.5s linear 0s infinite normal;
 }
+
+#starry {
+  font-size: 120px;
+  color: gold;
+  z-index: 2;
+  animation: glitter 4.5s linear 0s infinite normal;
+  -webkit-animation: glitter 4.5s linear 0s infinite normal;
+  -moz-animation: glitter 4.5s linear 0s infinite normal;
+  -ms-animation: glitter 4.5s linear 0s infinite normal;
+  -o-animation: glitter 4.5s linear 0s infinite normal;
+}
+@-webkit-keyframes glitter {
+  0%   { -webkit-transform: scale(1.0); opacity: 1; }
+  25%  { -webkit-transform: scale(0.5); opacity: 0; }
+  50%  { -webkit-transform: scale(1.0); opacity: 1; }
+  75%  { -webkit-transform: scale(0.5); opacity: 0; }
+  100% { -webkit-transform: scale(1.0); opacity: 1; }
+}
+@-moz-keyframes glitter {
+  0%   { -moz-transform: scale(1.0); opacity: 1; }
+  25%  { -moz-transform: scale(0.5); opacity: 0; }
+  50%  { -moz-transform: scale(1.0); opacity: 1; }
+  75%  { -moz-transform: scale(0.5); opacity: 0; }
+  100% { -moz-transform: scale(1.0); opacity: 1; }
+}
+
+#stumps {
+  color: green;
+}
+
+span:hover {
+  color: red;
+  transition: .25s;
+  -webkit-animation: shake .25s ease-in-out;
+  animation: shake .25s ease-in-out;
+}
+  @-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+
+  20% {
+    -webkit-transform: translateX(-10px);
+  }
+
+  40% {
+    -webkit-transform: translateX(10px);
+  }
+
+  60% {
+    -webkit-transform: translateX(-10px);
+  }
+
+  80% {
+    -webkit-transform: translateX(10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@keyframes shake {
+  0% {transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(-10px);
+  }
+
+  40% {
+    transform: translateX(10px);
+  }
+
+  60% {
+    transform: translateX(-10px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+
+}
+
 .stump {
 
   width: 100%;
   height: 50px;
-  background-color: red;
 }

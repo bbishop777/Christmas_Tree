@@ -5,12 +5,16 @@ function christmasTreeMaker(rows) {
 
   var divyFirst = document.createElement('div');
   divyFirst.className ='star';
-  divyFirst.innerHTML = '*';
   document.body.appendChild(divyFirst);
+
+  var spansFirst = document.createElement('span');
+  spansFirst.id= 'starry';
+  spansFirst.innerHTML = "*";
+  divyFirst.appendChild(spansFirst);
 
   for (i=1; i<= rows; i++) {
     var divy = document.createElement('div');
-    divy.class= 'rowy';
+    divy.className= 'rowy';
     document.body.appendChild(divy);
     x = layers.length;
 
@@ -19,7 +23,7 @@ function christmasTreeMaker(rows) {
       var spans = document.createElement('span');
       spans.id = 'row' +i + ' cell'+y;
       divy.appendChild(spans);
-      spans.innerHTML= spans.innerHTML + shape;
+      spans.innerHTML = shape;
 
       }
 
@@ -29,10 +33,11 @@ function christmasTreeMaker(rows) {
   var divyTwo = document.createElement('div');
   divyTwo.className ='stump';
   document.body.appendChild(divyTwo);
+
   var spansTwo = document.createElement('span');
   spansTwo.id = 'stumps';
-  spansTwo.innerHTML= spansTwo.innerHTML + '||';
+  spansTwo.innerHTML = '||';
   divyTwo.appendChild(spansTwo);
 }
 
-christmasTreeMaker(2);
+christmasTreeMaker(6);
