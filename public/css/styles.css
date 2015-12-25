@@ -1,0 +1,19 @@
+#head {
+  width: 100%;
+  height: 300px; }
+
+div {
+  text-align: center;
+  margin: 15px;
+  width: 100%;
+  height: 50px; }
+
+span {
+  font-size: 85px;
+  font-weight: 500;
+  font-family: "Ariel Black"; }
+
+.stump {
+  width: 100%;
+  height: 50px;
+  background-color: red; }
